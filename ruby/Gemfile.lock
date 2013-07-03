@@ -1,0 +1,40 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    celluloid (0.13.0)
+      timers (>= 1.0.0)
+    celluloid-pmap (0.1.0)
+      celluloid (~> 0.12)
+    coderay (1.0.9)
+    ffi (1.9.0-java)
+    method_source (0.8.1)
+    mini_portile (0.5.0)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    nokogiri (1.6.0-java)
+      mini_portile (~> 0.5.0)
+    nori (2.2.0)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry (0.9.12.2-java)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+      spoon (~> 0.0)
+    slop (3.4.5)
+    spoon (0.0.4)
+      ffi
+    timers (1.1.0)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  celluloid (~> 0.13.0)
+  celluloid-pmap
+  nokogiri
+  nori (~> 2.0)
+  pry

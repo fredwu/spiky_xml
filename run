@@ -1,0 +1,19 @@
+#!/bin/bash --login
+
+if [[ $1 ]]; then
+  export EXECUTION_CYCLES=$1
+else
+  export EXECUTION_CYCLES=1
+fi
+
+rvm 2.0.0
+BUNDLE_GEMFILE=ruby/Gemfile bundle install --quiet
+BUNDLE_GEMFILE=ruby/Gemfile bundle exec ruby ruby/serial.rb
+BUNDLE_GEMFILE=ruby/Gemfile bundle exec ruby ruby/concurrent.rb
+
+rvm jruby
+BUNDLE_GEMFILE=ruby/Gemfile bundle install --quiet
+BUNDLE_GEMFILE=ruby/Gemfile bundle exec ruby ruby/serial.rb
+BUNDLE_GEMFILE=ruby/Gemfile bundle exec ruby ruby/concurrent.rb
+
+node nodejs/async.js
