@@ -16,4 +16,5 @@ BUNDLE_GEMFILE=ruby/Gemfile bundle install --quiet
 BUNDLE_GEMFILE=ruby/Gemfile bundle exec ruby ruby/serial.rb
 BUNDLE_GEMFILE=ruby/Gemfile bundle exec ruby ruby/concurrent.rb
 
-node nodejs/async.js
+node nodejs/xml2js.js
+node nodejs/libxmljs.js
